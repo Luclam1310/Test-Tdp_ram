@@ -1,0 +1,20 @@
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /tdpram_tb_pkg
+=== Design Unit: work.tdpram_tb_pkg
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                       1         1         0   100.00%
+    Covergroups                      1        na        na    72.91%
+        Coverpoints/Crosses          2        na        na        na
+            Covergroup Bins         14        10         4    71.42%
+
+
+TOTAL COVERGROUP COVERAGE: 72.91%  COVERGROUP TYPES: 1
+
+TOTAL ASSERTION COVERAGE: 100.00%  ASSERTIONS: 1
+
+Total Coverage By Instance (filtered view): 86.45%
+

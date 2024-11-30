@@ -1,0 +1,249 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Nov 30 11:45:31 2024
+# Process ID: 9988
+# Current directory: D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut
+# Command line: vivado.exe -mode tcl
+# Log file: D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/vivado.log
+# Journal file: D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut\vivado.jou
+# Running On: Lam, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 8299 MB
+#-----------------------------------------------------------
+Vivado% source gen_net.tcl
+# read_verilog "tdp_ram.v"
+# synth_design -top "tdp_ram" -part "xc7a35tcpg236-1"
+Command: synth_design -top tdp_ram -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13132
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 832.906 ; gain = 412.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tdp_ram' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'tdp_ram' (0#1) [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 923.219 ; gain = 502.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 923.219 ; gain = 502.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 923.219 ; gain = 502.641
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-3971] The signal "tdp_ram/mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 923.219 ; gain = 502.641
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	              512 Bit	(64 X 8 bit)          RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3971] The signal "tdp_ram/mem_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_12) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_14) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_16) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_18) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_20) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_22) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_24) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_26) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_28) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_30) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_32) is unused and will be removed from module tdp_ram.
+WARNING: [Synth 8-3332] Sequential element (i_34) is unused and will be removed from module tdp_ram.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_a_reg[7]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_a_reg[6]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_a_reg[5]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_a_reg[4]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_a_reg[3]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_a_reg[2]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_a_reg[1]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_a_reg[0]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:38]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_b_reg[7]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_b_reg[6]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_b_reg[5]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_b_reg[4]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_b_reg[3]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_b_reg[2]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_b_reg[1]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'dout_b_reg[0]/Q' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram.v:28]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1111.898 ; gain = 691.320
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1111.898 ; gain = 691.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1111.898 ; gain = 691.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.898 ; gain = 691.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.898 ; gain = 691.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.898 ; gain = 691.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.898 ; gain = 691.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.898 ; gain = 691.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.898 ; gain = 691.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    16|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    16|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.898 ; gain = 691.320
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 48 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.898 ; gain = 691.320
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.898 ; gain = 691.320
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1152.812 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1237.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: ba0fc03b
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 19 Warnings, 48 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1237.453 ; gain = 841.758
+# write_verilog -mode funcsim tdp_ram_netlist.v
+D:/TESTING_CHIP/2_tdp_ram/uvm_test/verify/dut/tdp_ram_netlist.v
+Vivado% q
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 30 11:47:14 2024...
