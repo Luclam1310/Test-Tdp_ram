@@ -1,5 +1,5 @@
 # vsim -c top_optimized -coverage "+UVM_TESTNAME=tdpram_test" -do "sim.do" 
-# Start time: 11:43:06 on Nov 30,2024
+# Start time: 06:08:56 on Dec 01,2024
 # //  Questa Sim-64
 # //  Version 2021.1 win64 Jan 19 2021
 # //
@@ -32,17 +32,17 @@
 # Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
 # do sim.do
 # QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
-# Start time: 11:43:18 on Nov 30,2024
+# Start time: 06:09:10 on Dec 01,2024
 # vcover report -html spi_test.ucdb -htmldir covhtmlreport 
 # ** Warning: (vcover-19053) Option '-htmldir' has been deprecated. Please use option '-output' instead.
 # ** Error: (vcover-7) Failed to open UCDB file "spi_test.ucdb" in read mode.
-# End time: 11:43:32 on Nov 30,2024, Elapsed time: 0:00:14
+# End time: 06:09:26 on Dec 01,2024, Elapsed time: 0:00:16
 # Errors: 1, Warnings: 1
 # QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
-# Start time: 11:43:32 on Nov 30,2024
+# Start time: 06:09:26 on Dec 01,2024
 # vcover report -file cov_report.txt tdpram_test.ucdb 
 # ** Warning: (vcover-19053) Option '-file' has been deprecated. Please use option '-output' instead.
-# End time: 11:43:32 on Nov 30,2024, Elapsed time: 0:00:00
+# End time: 06:09:26 on Dec 01,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # ----------------------------------------------------------------
 # UVM-1.1d
@@ -545,5 +545,5 @@
 # ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 395050 ps  Iteration: 54  Instance: /tb_top
 # Saving coverage database on exit...
-# End time: 11:43:32 on Nov 30,2024, Elapsed time: 0:00:26
+# End time: 06:09:27 on Dec 01,2024, Elapsed time: 0:00:31
 # Errors: 0, Warnings: 3
